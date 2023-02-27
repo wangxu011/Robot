@@ -1,0 +1,183 @@
+/* 多语言切换 select - option 样式*/
+.el-popper.switch_lang{
+  border: none !important;
+  .el-select-dropdown__wrap{
+    border-radius: 4px;
+    background-color: #525965;
+    .el-select-dropdown__list{
+      background-color: #525965;
+      .el-select-dropdown__item{
+        height: 40px;
+        line-height: 40px;
+        font-size: 22px;
+        padding: 0;
+        padding-left: 10px;
+        padding-top: 5px;
+        color: #aaa;
+        .option_wrap{
+          display: flex;
+          align-items: center;
+          img{
+            width: 30px;
+            margin-right: 10px;
+          }
+        }
+      }
+      .el-select-dropdown__item.selected{
+        color: #fff !important;
+        font-weight: 500 !important;
+        background-color: #CDD3D6 !important;
+      }
+      .el-select-dropdown__item.hover{
+        background-color: transparent;
+      }
+    }
+  }
+  .el-popper__arrow::before{
+    background: #525965 !important;
+    border: none !important;
+  }
+}
+
+/* loading样式 */
+.el-loading-mask{
+  background-color: rgba(24, 24, 26, .7) !important;
+}
+.el-loading-spinner {
+  svg{
+    width:100px !important;
+    height: 100px !important;
+    .path{
+      stroke: #00ddc9;
+    }
+  }
+}
+
+/* el-table */
+.flight_wrap_robot{
+  .el-table{
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: rgba($color: #31373A, $alpha: 0.7);
+    .el-table__header-wrapper{
+      tr{
+        background-color: transparent;
+      }
+      th.el-table__cell{
+        font-weight: bold;
+        line-height: 60px;
+        padding: 0;
+        background-color: transparent;
+        color: #00DDC9;
+        .cell{
+          line-height: 60px;
+        }
+      }
+    }
+    .el-table__body-wrapper{
+      tr{
+        background-color: #384048;
+      }
+      td{
+        background-color: #384048;
+        border-bottom: 1px solid #B3C7E3;
+        .cell{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          line-height: 60px;
+          color: #fff;
+          font-size: 21px;
+        }
+      }
+      // 设置表格tr的hover背景色与原色相同
+      tr:hover>td.el-table__cell {
+        background-color: #384048;
+      }
+      // 航班号中对应航空公司logo的样式
+      .airline_wrap{
+        display: flex;
+        align-items: center;
+        .img_wrap{
+          width: 30px;
+          height: 30px;
+          border-radius: 4px;
+          overflow: hidden;
+          text-align: center;
+          position: relative;
+          background-color: #fff;
+          img{
+            height: 100%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+        .flight_no{
+          width: 95px;
+          margin-left: 10px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+/* el-message */
+.el-message{
+  top: 180px !important;
+  padding: 30px 50px !important;
+  .el-icon{
+    font-size: 50px;
+  }
+  .el-message__content{
+    font-size: 40px;
+    text-align: justify;
+  }
+}
+
+/* el-dialog */
+.dialog32.el-dialog{
+  border-radius: 30px;
+  .el-dialog__header{
+    padding: 0;
+  }
+  .el-dialog__body{
+    height: 1172px;
+    text-align: left;
+    color: #333;
+    background: url(../../assets/images/dialog_header.png) no-repeat;
+    padding-top: 0;
+    .title32{
+      height: 260px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 70px;
+      text-align: center;
+      font-family: '优设标题黑';
+      color: #fff;
+      overflow: hidden;
+      text-shadow: -1px 3px 4px rgba(32, 19, 7, 0.54);
+    }
+    .content_wrapper{
+      height: calc(100% - 260px);
+    }
+  }
+  .el-dialog__footer{
+    padding: 0;
+    position: relative;
+    .close{
+      position: absolute;
+      width: 87px;
+      height: 87px;
+      background: url(../../assets/images/close.png) no-repeat;
+      background-size: cover;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

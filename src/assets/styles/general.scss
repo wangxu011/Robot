@@ -1,0 +1,87 @@
+.drop-leave-active,
+.drop-enter-active {
+  transition: all .3s;
+}
+.drop-enter-from{
+  opacity: 0;
+  transform: translateY(-50px);
+}
+.drop-leave-to {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+
+.raise-leave-active,
+.raise-enter-active {
+  transition: all .3s;
+}
+.raise-enter-from{
+  opacity: 0;
+  transform: translateY(100px);
+}
+.raise-leave-to {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+/* 首页中各入口模块的样式：item2位占据两个位置的样式，item1是一个位置的样式 */
+.item2{
+  width: 66%;
+  font-size: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .img_wrap{
+    width: 160px;
+    img{
+      height: 100%;
+    }
+  }
+  .label{
+    width: 300px;
+    margin-left: 25px;
+  }
+}
+.item1{
+  width: 32%;
+  font-size: 45px;
+  .img_wrap{
+    width: 165px;
+    margin: 0 auto;
+    margin-top: 80px;
+    img{
+      height: 100%;
+    }
+  }
+  .label{
+    margin-top: 32px;
+  }
+}
+
+/* 导航流程模板内容中的通用样式 */
+.navigation_container{
+  .content_wrap{
+    .btn_wrap {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 113px;
+      padding-top: 45px;
+      .btn{
+        width: 314px;
+        height: 94px;
+        border-radius: 47px;
+        border: 3px solid #00F4DE;
+        background: rgba(96, 96, 96, 0.45);
+        color: #DFDFDF;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 86px;
+        padding: 0 20px;
+        padding-top: 15px;
+      }
+    }
+    .img_wrap{
+      padding-top: 147px;
+    }
+  }
+}
